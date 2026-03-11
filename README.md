@@ -1,16 +1,76 @@
-# React + Vite
+Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The frontend of the Travel Experience Listing Platform provides the user interface for browsing and managing travel experience listings. 
+Users can view the public feed, see listing details, register, log in, and create new listings. 
+The frontend is built to be simple, responsive, and easy to use, with clean navigation between pages.
 
-Currently, two official plugins are available:
+Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+•	React (Vite)
 
-## React Compiler
+•	React Router DOM
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+•	JavaScript
 
-## Expanding the ESLint configuration
+•	CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+•	Axios
+
+•	Lucide React
+
+Setup Instructions
+
+1. Install dependencies
+   
+•	npm install
+
+2. Run the frontend
+   
+•	npm run dev
+
+The frontend will run on:
+
+•	http://localhost:5173
+
+
+Features Implemented
+
+User Interface
+
+•	Home page with public travel listings
+
+•	Listing detail page
+
+•	Login page
+
+•	Register page
+
+•	Create listing page
+
+•	Not Found page
+
+Navigation
+
+•	Responsive navigation bar
+
+•	Routing with React Router DOM
+
+•	Easy navigation between pages
+
+Listing Features
+
+•	Display all travel listings
+
+•	Show listing details such as title, location, image, description, and price
+
+•	Form for creating a new travel listing
+
+
+Authentication UI
+
+•	User registration form
+
+•	User login form
+
+•	Frontend integration for authentication requests
+
