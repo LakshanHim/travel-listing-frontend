@@ -1,0 +1,154 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container { padding: 0 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .container { padding: 0 2rem; }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIconWrapper {
+  padding: 0.5rem;
+  background-color: var(--primary-50);
+  border-radius: var(--radius-lg);
+}
+
+.logoIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--primary-600);
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+  color: var(--gray-900);
+}
+
+.logoHighlight {
+  color: var(--primary-600);
+}
+
+.desktopNav {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .desktopNav { display: flex; }
+}
+
+.navLink {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  transition: color var(--transition-fast);
+}
+
+.navLink:hover, .navLinkActive {
+  color: var(--primary-600);
+}
+
+.divider {
+  width: 1px;
+  height: 1rem;
+  background-color: var(--gray-200);
+}
+
+.mobileMenuBtn {
+  display: flex;
+  align-items: center;
+  color: var(--gray-600);
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.mobileMenuBtn:hover {
+  color: var(--gray-900);
+}
+
+.mobileIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .mobileContainer { display: none; }
+}
+
+.mobileMenu {
+  background-color: white;
+  border-bottom: 1px solid var(--gray-100);
+  padding: 0.5rem 1rem 1rem;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mobileLink {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-900);
+}
+
+.mobileLink:hover {
+  background-color: var(--gray-50);
+}
+
+.mobileLinkPrimary {
+  color: var(--primary-600);
+}
+
+.mobileLinkPrimary:hover {
+  background-color: var(--primary-50);
+}
+
+.mobileDivider {
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--gray-100);
+}
+
+.mobileAuthBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--gray-100);
+}

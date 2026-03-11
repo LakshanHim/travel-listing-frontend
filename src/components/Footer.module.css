@@ -1,0 +1,131 @@
+.footer {
+  background-color: white;
+  border-top: 1px solid var(--gray-100);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  margin-top: auto;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container { padding: 0 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .container { padding: 0 2rem; }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.brandCol {
+  grid-column: span 1;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.logoIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--primary-600);
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+  color: var(--gray-900);
+}
+
+.logoHighlight {
+  color: var(--primary-600);
+}
+
+.brandDesc {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  line-height: inherit; /* Update to 1.5 or 1.6 later maybe */
+  margin-bottom: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--gray-400);
+}
+
+.socialIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.socials a:hover {
+  color: var(--primary-600);
+}
+
+.columnTitle {
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+}
+
+.linkList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+.linkList a:hover {
+  color: var(--primary-600);
+}
+
+.bottomBar {
+  padding-top: 2rem;
+  border-top: 1px solid var(--gray-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+@media (min-width: 768px) {
+  .bottomBar {
+    flex-direction: row;
+  }
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.bottomLinks a:hover {
+  color: var(--gray-900);
+}
