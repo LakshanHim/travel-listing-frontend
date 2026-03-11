@@ -1,0 +1,401 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem; /* For fixed navbar */
+}
+
+.main {
+  flex-grow: 1;
+  background-color: white;
+}
+
+.notFoundContainer {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFoundContent {
+  text-align: center;
+}
+
+.notFoundTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+}
+
+.headerSection {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .headerSection { padding: 1.5rem 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .headerSection { padding: 1.5rem 2rem; }
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title { font-size: 2.25rem; }
+}
+
+.metaBar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .metaBar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.metaInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+}
+
+.metaItemPrimary {
+  color: var(--gray-900);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+
+.starIcon {
+  color: #eab308;
+  fill: currentColor;
+}
+
+.mapIcon {
+  color: var(--gray-400);
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.actionBtns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-lg);
+  transition: background-color var(--transition-fast);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: inherit;
+  color: var(--gray-900);
+}
+
+.actionBtn:hover {
+  background-color: var(--gray-50);
+}
+
+.gallerySection {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .gallerySection { padding: 0 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .gallerySection { padding: 0 2rem; }
+}
+
+.heroImageContainer {
+  aspect-ratio: 21 / 9;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.heroImageContainer:hover .heroImage {
+  transform: scale(1.05);
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 700ms;
+}
+
+.contentSection {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem 5rem;
+}
+
+@media (min-width: 640px) {
+  .contentSection { padding: 0 1.5rem 5rem; }
+}
+
+@media (min-width: 1024px) {
+  .contentSection { padding: 0 2rem 5rem; }
+}
+
+.contentLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .contentLayout {
+    flex-direction: row;
+  }
+}
+
+.detailsCol {
+  flex-grow: 1;
+}
+
+@media (min-width: 1024px) {
+  .detailsCol {
+    width: 66.666667%;
+  }
+}
+
+.bookingCol {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .bookingCol {
+    width: 33.333333%;
+  }
+}
+
+.hostHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.hostTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 0.25rem;
+}
+
+.hostMeta {
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.hostMeta span {
+  display: inline-block;
+}
+
+.hostMeta span + span::before {
+  content: "·";
+  margin: 0 0.5rem;
+}
+
+.hostAvatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-full);
+  background-color: var(--primary-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-700);
+  font-weight: 600;
+  font-size: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid white;
+}
+
+.featuresList {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.featureItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.featureIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--gray-800);
+}
+
+.featureTitle {
+  font-weight: 600;
+  color: var(--gray-900);
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.featureDesc {
+  color: var(--gray-500);
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.aboutSection {
+  padding: 2rem 0;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 1.5rem;
+}
+
+.aboutText {
+  color: var(--gray-600);
+  line-height: 1.6;
+  font-size: 1.125rem;
+  white-space: pre-line;
+}
+
+.bookingCard {
+  position: sticky;
+  top: 6rem;
+  background-color: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-2xl);
+  padding: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+.bookingHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.priceDisplay {
+  display: flex;
+  align-items: baseline;
+}
+
+.priceAmount {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.priceUnit {
+  color: var(--gray-500);
+  font-weight: 500;
+  margin-left: 0.25rem;
+}
+
+.bookingMeta {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  gap: 0.25rem;
+}
+
+.bookingStar {
+  color: var(--gray-900);
+  fill: currentColor;
+}
+
+.bookingReviews {
+  text-decoration: underline;
+  color: var(--gray-500);
+  font-weight: 400;
+}
+
+.bookingBtn {
+  padding: 1rem !important;
+  font-size: 1.125rem !important;
+  margin-bottom: 1rem;
+}
+
+.noChargeText {
+  text-align: center;
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.protectionBanner {
+  border-top: 1px solid var(--gray-200);
+  padding-top: 1.5rem;
+}
+
+.protectionItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.shieldIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--gray-400);
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
+.boldText {
+  font-weight: 600;
+}
